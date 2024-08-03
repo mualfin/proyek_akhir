@@ -24,5 +24,5 @@ with tab1:
     st.image("holiday.png")
 
 with tab2:
-    st.text('Apakah musim berpengaruh dalam permintaan sewa sepeda?')
+    st.subheader('Apakah musim berpengaruh dalam permintaan sewa sepeda?')
     st.image("season.png")
