@@ -16,7 +16,7 @@ st.subheader('Pertanyaan Bisnis?')
 st.text('1. Bagaimana performa permintaan sewa sepeda pada hari libur dan tidak libur?')
 st.text('2. Apakah musim berpengaruh dalam permintaan sewa sepeda?')
 
-st.subheader('Hasil Analisis')
+st.header('Hasil Analisis')
 tab1, tab2 = st.tabs(["Pertanyaan 1", "Pertanyaan 2"])
 
 with tab1:
@@ -26,3 +26,12 @@ with tab1:
 with tab2:
     st.subheader('Apakah musim berpengaruh dalam permintaan sewa sepeda?')
     st.image("season.png")
+
+left_column, right_column = st.columns(2)
+with left_column:
+    st.header('Pertanyaan 1')
+    st.write('Grafik tersebut menunjukkan bahwa jumlah rata-rata penyewaan sepeda per hari lebih tinggi pada NOT HOLIDAY dibandingkan dengan HOLIDAY. Ini mengindikasikan bahwa sepeda lebih sering digunakan sebagai sarana transportasi untuk kegiatan sehari-hari atau bekerja pada NOT HOLIDAY. Untuk meningkatkan pendapatan, beberapa strategi dapat diterapkan, seperti memberikan diskon atau penawaran khusus pada HOLIDAY untuk menarik lebih banyak pelanggan, serta menyelenggarakan event atau aktivitas yang melibatkan penyewaan sepeda.')
+with right_column:
+    st.header('Pertanyaan 2')
+    st.write('Grafik tersebut menunjukkan bahwa jumlah penyewaan sepeda terendah terjadi pada musim SPRING dan tertinggi pada musim FALL, dengan musim WINTER dan SUMMER berada di antara keduanya. Untuk meningkatkan pendapatan, beberapa strategi dapat diterapkan, seperti membuat promosi khusus dan event menarik di musim FALL, memastikan sepeda dalam kondisi baik dan memberikan penawaran paket langganan menarik di musim WINTER dan SUMMER, serta memaksimalkan potensi di musim FALL dengan menambah jumlah sepeda dan mempromosikannya melalui media sosial. Peningkatan layanan dan fasilitas sepanjang tahun juga penting untuk menjaga dan meningkatkan jumlah penyewaan sepeda')
+
