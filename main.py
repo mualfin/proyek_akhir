@@ -8,13 +8,13 @@ sns.set(style='dark')
 all_df = pd.read_csv("all_data.csv")
 
 st.title('Proyek Analisis Data :sparkles:')
-st.text('Proyek ini disusun sebagai syarat untuk menyelesaikan') 
-st.text('kelas Belajar Analisis Data dengan Python Dicoding')
+st.write('Proyek ini disusun sebagai syarat untuk menyelesaikan kelas Belajar Analisis Data dengan Python Dicoding') 
+
 
 st.header('Bike Sharing Dataset')
 st.subheader('Pertanyaan Bisnis?')
-st.text('1. Bagaimana performa permintaan sewa sepeda pada hari libur dan tidak libur?')
-st.text('2. Apakah musim berpengaruh dalam permintaan sewa sepeda?')
+st.write('1. Bagaimana performa permintaan sewa sepeda pada hari libur dan tidak libur?')
+st.write('2. Apakah musim berpengaruh dalam permintaan sewa sepeda?')
 
 st.header('Hasil Analisis')
 tab1, tab2 = st.tabs(["Pertanyaan 1", "Pertanyaan 2"])
@@ -35,4 +35,3 @@ with left_column:
 with right_column:
     st.subheader('Pertanyaan 2')
     st.write('Grafik tersebut menunjukkan bahwa jumlah penyewaan sepeda terendah terjadi pada musim SPRING dan tertinggi pada musim FALL, dengan musim WINTER dan SUMMER berada di antara keduanya. Untuk meningkatkan pendapatan, beberapa strategi dapat diterapkan, seperti membuat promosi khusus dan event menarik di musim FALL, memastikan sepeda dalam kondisi baik dan memberikan penawaran paket langganan menarik di musim WINTER dan SUMMER, serta memaksimalkan potensi di musim FALL dengan menambah jumlah sepeda dan mempromosikannya melalui media sosial. Peningkatan layanan dan fasilitas sepanjang tahun juga penting untuk menjaga dan meningkatkan jumlah penyewaan sepeda')
-
