@@ -17,7 +17,7 @@ st.text('Bagaimana performa permintaan sewa sepeda pada hari libur dan tidak lib
 st.text('Apakah musim berpengaruh dalam permintaan sewa sepeda?')
 
 st.subheader('Hasil Analisis')
-tab1, tab2 = st.tabs(["Tab 1", "Tab 2"])
+tab1, tab2 = st.tabs(["Pertanyaan 1", "Pertanyaan 2"])
 
 with tab1:
     st.subheader('Bagaimana performa permintaan sewa sepeda pada hari libur dan tidak libur?')
