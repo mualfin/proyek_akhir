@@ -26,7 +26,7 @@ with tab1:
     all_df.holiday.replace((0,1), ('Not Holiday','Holiday'), inplace=True)
     all_df.groupby('holiday')['cnt'].mean().reset_index().sort_values("cnt")
 
-    avg_holiday = day_df.groupby('holiday')['cnt'].mean().reset_index().sort_values("cnt")
+    avg_holiday = all_df.groupby('holiday')['cnt'].mean().reset_index().sort_values("cnt")
     plt.figure(figsize=(8, 5))
     sns.barplot(x='holiday', y='cnt', data=avg_holiday, palette='Set2')
 
