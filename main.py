@@ -13,25 +13,16 @@ st.text('kelas Belajar Analisis Data dengan Python Dicoding')
 
 st.header('Bike Sharing Dataset')
 st.subheader('Pertanyaan Bisnis?')
-st.text('Bagaimana performa permintaan sewa sepeda pada hari libur dan tidak libur?')
-st.text('Apakah musim berpengaruh dalam permintaan sewa sepeda?')
+st.text('1. Bagaimana performa permintaan sewa sepeda pada hari libur dan tidak libur?')
+st.text('2. Apakah musim berpengaruh dalam permintaan sewa sepeda?')
 
 st.subheader('Hasil Analisis')
 tab1, tab2 = st.tabs(["Pertanyaan 1", "Pertanyaan 2"])
 
 with tab1:
     st.subheader('Bagaimana performa permintaan sewa sepeda pada hari libur dan tidak libur?')
-
-    avg_holiday = all_df.groupby('holiday')['cnt'].mean().reset_index().sort_values("cnt")
-    plt.figure(figsize=(8, 5))
-    sns.barplot(x='holiday', y='cnt', data=avg_holiday, palette='Set2')
-
-    plt.title('Performa Sewa Sepeda Per Hari')
-    plt.xlabel('Hari Libur atau tidak')
-    plt.ylabel('Jumlah Rata-Rata Penyewaan')
-
-    plt.show()
+    st.image("
 
 with tab2:
-    st.text('ini gambar 2')
+    st.text('Apakah musim berpengaruh dalam permintaan sewa sepeda?')
 
