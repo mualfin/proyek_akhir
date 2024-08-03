@@ -21,8 +21,8 @@ tab1, tab2 = st.tabs(["Pertanyaan 1", "Pertanyaan 2"])
 
 with tab1:
     st.subheader('Bagaimana performa permintaan sewa sepeda pada hari libur dan tidak libur?')
-    st.image("https://github.com/mualfin/asset/holiday.png")
+    st.image("holiday.png")
 
 with tab2:
     st.text('Apakah musim berpengaruh dalam permintaan sewa sepeda?')
-    st.image("https://github.com/mualfin/asset/season.png")
+    st.image("season.png")
